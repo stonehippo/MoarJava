@@ -1,0 +1,2 @@
+#define WLAN_SSID       "MY SSID"
+#define WLAN_PASS       "MY PASSWORD"
