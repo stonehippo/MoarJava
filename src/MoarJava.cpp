@@ -10,6 +10,7 @@
 WiFiClientSecure client;
 
 const int WIFI_TIMEOUT = 10000; // 10 seconds
+const int PAUSE = 120000; // 2 minutes
 
 const int FSR_PIN = A0; // use the  analog pin
 
@@ -56,7 +57,7 @@ bool network_connect(char ssid[], char password[]) {
 
   long count = millis();
   while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
+    delay(PAUSE);
     Serial.print(".");
     if ((millis() - count) > WIFI_TIMEOUT) {
       break;
