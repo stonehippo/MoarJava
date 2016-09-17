@@ -9,7 +9,7 @@ About MoarJava
 - Built using a few simple components
   - ESP8266 board — I'm using an [Adafruit Huzzah ESP8266](https://www.adafruit.com/product/2471), but other boards based on this chip will likely work
   - A force sensitive resistor
-- Developed using [Platform.io](https://platform.io)
+- Developed using [Platform.io](https://platformio.org)
 
 Notes
 -----
