@@ -9,22 +9,15 @@
 
 WiFiClientSecure client;
 
-// Store the MQTT server, username, and password in flash memory.
-// This is required for using the Adafruit MQTT library.
-const char MQTT_SERVER[] PROGMEM    = AIO_SERVER;
-const char MQTT_USERNAME[] PROGMEM  = AIO_USERNAME;
-const char MQTT_PASSWORD[] PROGMEM  = AIO_KEY;
-
 const int WIFI_TIMEOUT = 10000; // 10 seconds
 
 const int FSR_PIN = A0; // use the  analog pin
 
 int fsrReading;
 
-Adafruit_MQTT_Client mqtt(&client, MQTT_SERVER, AIO_SERVERPORT, MQTT_USERNAME, MQTT_PASSWORD);
+Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
 
-const char MOARJAVA_FEED[] PROGMEM = AIO_USERNAME "/feeds/MoarJava";
-Adafruit_MQTT_Publish moarJava = Adafruit_MQTT_Publish(&mqtt, MOARJAVA_FEED);
+Adafruit_MQTT_Publish moarJava = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME "/feeds/MoarJava");
 
 void setup() {
 
