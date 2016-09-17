@@ -17,5 +17,5 @@ Notes
 The ESP8266 ADC pin can only take 0-1V input. To make sure this is all it gets, I'm reading from the FSR via a resistor divider:
 
 ```
-3.3V->FSR->R1[10K]->ADC->R2[3.9K]->GND
+3.3V->FSR->R1[10K]->ADC->R2[4.7K]->GND
 ```
