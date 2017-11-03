@@ -5,3 +5,5 @@
 src/AIOKeys.h
 src/WiFiDefaultAuth.h
 .DS_Store
+.vscode
+.vscode/c_cpp_properties.json
