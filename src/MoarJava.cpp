@@ -4,7 +4,7 @@
 #include "Adafruit_MQTT_Client.h"
 
 #include "MoarJava.h"
-#include "WifiDefaultAuth.h"
+#include "WiFiDefaultAuth.h"
 #include "AIOKeys.h"
 
 WiFiClientSecure client;
